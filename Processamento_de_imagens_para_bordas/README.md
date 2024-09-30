@@ -1,7 +1,7 @@
 # Unidade de Controle de um Processador
 
 ## Objetivo
-Esta prática tem como objetivo implementar, na FPGA, um hardware que identifiue a borda de imagens binárias.
+Esta prática tem como objetivo implementar, na FPGA, um hardware que identifiue a borda de imagens binárias. Esta atividade é baseda no livro Rapid Prototyping of Digital Systems.
 
 ## Modulos Utilizados
 - ROM de 1 bit x 32.768 palavras (implementado pelo MegaWizard do Quartus II)
