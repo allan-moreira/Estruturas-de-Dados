@@ -14,7 +14,7 @@ Esta prática tem como objetivo implementar, na FPGA, um hardware que identifiue
 - Módulos do Sistema VGA (Fornecidos pelo Professor)
 
 ## Funcionamento Geral
-O sistema de VGA gera a posição atual do pixel, que é levada para o bloco janela, no qual se verifica se o pixel atual da tela está dentro da área de 256 x 128 (tamanho da imagem). Ao mesmo tempo, a posição atual do pixel é levada para o bloco conc, no qual se junta os 7 bits menos significativos da coluna e os 6 bits menos significativos das linhas. Este enderenço concatenado é levado para a memória, a qual armazena a imagem presente em "image.mif". Em seguida, cada bit que sai da memória entra na cadeia de registradores, a fim de simular uma matriz 3x3 na imagem. Os bits dessa máscara 3x3 são levados ao bloco borda, onde a borda pode ser detectada. Por fim, o bit resultante é selecionado pelo multiplexador e armazenado no flip-flop de entrada do sistema VGA, para ser exibido na tela.
+O sistema de VGA gera a posição atual do pixel, que é levada para o bloco janela, no qual se verifica se o pixel atual da tela está dentro da área de 256 x 128 (tamanho da imagem). Ao mesmo tempo, a posição atual do pixel é levada para o bloco conc, no qual os 7 bits menos significativos da coluna e os 6 bits menos significativos das linhas são concatenados. Este enderenço concatenado é levado para a memória, a qual armazena a imagem presente em "image.mif". Em seguida, cada bit que sai da memória entra na cadeia de registradores, a fim de simular uma matriz 3x3 na imagem. Os bits dessa máscara 3x3 são levados ao bloco borda, no qual a borda pode ser detectada. Por fim, o bit resultante é selecionado pelo multiplexador e armazenado no flip-flop de entrada do sistema VGA, para ser exibido na tela.
 
 
 
