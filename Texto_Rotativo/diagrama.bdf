@@ -109,7 +109,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1048 352 1224 368)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "HEX0[0..2]" (rect 90 0 143 12)(font "Arial" ))
+	(text "HEX0[0..6]" (rect 90 0 143 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -308,12 +308,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "add[2..0]" (rect 1032 344 1075 356)(font "Arial" ))
-	(pt 1048 360)
-	(pt 1024 360)
-	(bus)
-)
-(connector
 	(text "rst" (rect 456 200 468 212)(font "Arial" ))
 	(pt 480 216)
 	(pt 448 216)
@@ -328,4 +322,10 @@ applicable agreement for further details.
 	(text "clk" (rect 544 292 556 306)(font "Arial" )(vertical))
 	(pt 560 280)
 	(pt 560 304)
+)
+(connector
+	(text "m[6..0]" (rect 1032 344 1067 356)(font "Arial" ))
+	(pt 1048 360)
+	(pt 1024 360)
+	(bus)
 )
