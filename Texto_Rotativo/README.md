@@ -3,7 +3,7 @@
 ## Objetivo
 Esta prática tem como objetivo implementar um visor, na FPGA, que exiba um texto que percorra os displays de 7 seguimentos.
 
-## Modulos Utilizados
+## Módulos Utilizados
 - Memória ROM de 28 bits x 8 palavras (Gerado pelo MegaWizard no Quartus II)
 - Contador de 3 bits (Gerado pelo MegaWizard no Quartus II)
 
